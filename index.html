@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>两界超市 · 逆袭之路</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>">
+  <script type="module" crossorigin src="./assets/index-DGvtbwkA.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-EKAUIWNd.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">🏪 两界超市 <span class="badge">DEMO v3</span></div>
+    <div class="stats">
+      <div class="stat">🪙 <b class="money" id="money">150</b></div>
+      <div class="stat">📅 <b id="day">1 / 15</b></div>
+      <div class="stat">💸 债 <b class="debt" id="debt">6000</b></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="shop-status">🏪 当前：<span id="shop-label">破旧小超市</span></div>
+
+    <!-- 王老板区域 -->
+    <div class="boss-box">
+      <div class="boss-name" id="boss-name">王老板（黑心商会会长）</div>
+      <div class="boss-speech" id="boss-speech"></div>
+    </div>
+
+    <!-- 阶段标题 + 操作区 -->
+    <div class="phase-header">
+      <div class="phase-title" id="phase-title"></div>
+      <div class="phase-sub" id="phase-sub"></div>
+    </div>
+    <div id="action-area"></div>
+
+    <!-- 目标书（长期目标链，始终可见） -->
+    <div class="side-panel goals-panel">
+      <h3>📖 目标书 <span class="panel-hint">你的逆袭之路</span></h3>
+      <div id="goal-list"></div>
+    </div>
+
+    <!-- 探险队（第二条腿） -->
+    <div class="side-panel exp-panel">
+      <h3>🧭 探险队 <span class="panel-hint">超市利润 → 稀有货</span></h3>
+      <div id="exp-list"></div>
+    </div>
+
+    <!-- 订单板 -->
+    <div class="side-panel order-panel">
+      <h3>📋 异界订单板</h3>
+      <div id="order-box"></div>
+    </div>
+
+    <!-- 稀有货专区 -->
+    <div class="side-panel rare-panel">
+      <h3>💎 稀有货</h3>
+      <div id="rare-box"></div>
+    </div>
+
+    <!-- 仓库 -->
+    <div class="inventory">
+      <h3>📦 仓库 <span id="inv-count">0 / 6</span></h3>
+      <div id="inventory-grid"></div>
+    </div>
+
+    <!-- 当日记事 -->
+    <div class="log-box">
+      <h3>📜 当日记事</h3>
+      <div id="log-list"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div id="modal-text"></div>
+      <button class="btn primary big" id="modal-btn">继续</button>
+    </div>
+  </div>
+
+</body>
+</html>
